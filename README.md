@@ -9,6 +9,7 @@ FSmall have some features like:
 - Dark mode
 
 Download FSmall from [App Store](https://apps.apple.com/us/app/id1560622823) or [Google Play](https://play.google.com/store/apps/details?id=com.fsmall). (Currently, it is only available for iOS and Android devices.)
+- There is currently no download link, so wait a while :))
 
 ## Developing
 
