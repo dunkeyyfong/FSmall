@@ -21,3 +21,13 @@ If you want to develop FSmall:
 - Clone this repository. `git clone https://github.com/dunkeyyfong/FSmall.git`
 - Run `pnpm install` to install dependencies.
 - Start FSmall in development mode. `pnpm start`.
+
+### Release
+
+I'm developing FSmall with now. If you want to release FSmall, you should wait me :))).
+
+### Author
+
+[DunkeyyFong](https://dunkeyyfong.site)
+[Facebook](https://www.facebook.com/dunkeyy.fong)
+[Github](https://github.com.dunkeryfong)
