@@ -15,6 +15,9 @@ Download FSmall from [App Store](https://apps.apple.com/us/app/id1560622823) or 
 If you want to develop FSmall:
 
 - Install [Node.js](https://nodejs.org).
+  - With MacOS, you can install Node.js using [Homebrew](https://brew.sh). `brew install node`
+  - With Windows, you can download Node.js from the [official website](https://nodejs.org).
+  - Install [pnpm](https://pnpm.io). `npm install -g pnpm`
 - Clone this repository. `git clone https://github.com/dunkeyyfong/FSmall.git`
 - Run `pnpm install` to install dependencies.
 - Start FSmall in development mode. `pnpm start`.
