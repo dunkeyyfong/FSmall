@@ -32,4 +32,4 @@ I'm developing FSmall with now. If you want to release FSmall, you should wait m
 
 [DunkeyyFong](https://dunkeyyfong.site)
 [Facebook](https://www.facebook.com/dunkeyy.fong)
-[Github](https://github.com.dunkeryfong)
+[Github](https://github.com/dunkeyyfong)
