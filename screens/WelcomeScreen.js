@@ -19,14 +19,19 @@ const WelcomeScreen = ({ navigation }) => {
       >
         <View className="mb-24">
           <Text
-            className="text-cyan-50 font-sans font-bold"
+            className="text-cyan-50 font-sans font-bold mb-4"
             style={{ fontSize: 25 }}
           >
             Hello Guys...
           </Text>
           <Text className="font-bold text-cyan-50" style={{ fontSize: 40 }}>
             Welcome to{" "}
-            <Text className="ml-6 underline text-stone-50">FSmall.</Text>
+            <Text
+              className="ml-6 underline text-stone-50"
+              style={{ fontSize: 50 }}
+            >
+              FSmall.
+            </Text>
           </Text>
         </View>
         <CustomButton
