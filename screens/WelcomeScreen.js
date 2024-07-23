@@ -1,10 +1,13 @@
 import { StatusBar } from "expo-status-bar";
 import { Image, Text, View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+
 import CustomButton from "../components/CustomButton";
 
 const WelcomeScreen = ({ navigation }) => {
-  const handleGoToHomeScreen = () => {
+  const handleGoToHomeScreen = async () => {
+    await AsyncStorage.setItem("hasLaunched", "true");
     navigation.replace("Home");
   };
 
