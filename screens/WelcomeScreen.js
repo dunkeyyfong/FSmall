@@ -14,11 +14,7 @@ const WelcomeScreen = ({ navigation }) => {
         colors={["#507AC4", "#80C0E2"]}
         className="flex-1 items-center justify-center"
       >
-        <Image
-          source={require("../assets/images/logo.png")}
-          style={{ width: 100, height: 100, borderRadius: 20 }}
-        />
-        <View className="mb-6">
+        <View className="mb-24">
           <Text
             className="text-cyan-50 font-sans font-bold"
             style={{ fontSize: 25 }}
@@ -26,7 +22,8 @@ const WelcomeScreen = ({ navigation }) => {
             Hello Guys...
           </Text>
           <Text className="font-bold text-cyan-50" style={{ fontSize: 40 }}>
-            Welcome to <Text className="ml-6 underline">FSmall.</Text>
+            Welcome to{" "}
+            <Text className="ml-6 underline text-stone-50">FSmall.</Text>
           </Text>
         </View>
         <CustomButton
@@ -35,6 +32,102 @@ const WelcomeScreen = ({ navigation }) => {
           textStyles="text-[#80C0E2] font-semibold text-lg"
           handlePress={handleGoToHomeScreen}
         />
+        <View
+          style={{
+            height: 50,
+            width: 50,
+            backgroundColor: "white",
+            position: "absolute",
+            zIndex: 99,
+            bottom: "15%",
+            left: 12,
+            borderRadius: 100,
+          }}
+        ></View>
+        <View
+          style={{
+            height: 40,
+            width: 40,
+            backgroundColor: "white",
+            position: "absolute",
+            zIndex: 99,
+            bottom: "6%",
+            left: 30,
+            borderRadius: 100,
+          }}
+        ></View>
+        <View
+          style={{
+            height: 30,
+            width: 30,
+            backgroundColor: "white",
+            position: "absolute",
+            zIndex: 99,
+            bottom: "25%",
+            left: 50,
+            borderRadius: 100,
+          }}
+        ></View>
+        <View
+          style={{
+            height: 70,
+            width: 70,
+            backgroundColor: "white",
+            position: "absolute",
+            zIndex: 99,
+            bottom: "8%",
+            left: 75,
+            borderRadius: 100,
+          }}
+        ></View>
+        <View
+          style={{
+            height: 25,
+            width: 25,
+            backgroundColor: "white",
+            position: "absolute",
+            zIndex: 99,
+            bottom: "15%",
+            right: "35%",
+            borderRadius: 100,
+          }}
+        ></View>
+        <View
+          style={{
+            height: 40,
+            width: 40,
+            backgroundColor: "white",
+            position: "absolute",
+            zIndex: 99,
+            bottom: "9%",
+            right: 30,
+            borderRadius: 100,
+          }}
+        ></View>
+        <View
+          style={{
+            height: 30,
+            width: 30,
+            backgroundColor: "white",
+            position: "absolute",
+            zIndex: 99,
+            top: "20%",
+            left: 50,
+            borderRadius: 100,
+          }}
+        ></View>
+        <View
+          style={{
+            height: 30,
+            width: 30,
+            backgroundColor: "white",
+            position: "absolute",
+            zIndex: 99,
+            top: "8%",
+            right: 75,
+            borderRadius: 100,
+          }}
+        ></View>
         <StatusBar style="light" />
       </LinearGradient>
     </View>
