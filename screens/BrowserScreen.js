@@ -19,7 +19,6 @@ const BrowserScreen = () => {
       }
       setUrl(formattedUrl);
     } else {
-      // Nếu không có dấu chấm, thực hiện tìm kiếm trên Google
       setUrl(`https://www.google.com/search?q=${encodeURIComponent(inputUrl)}`);
     }
   };
