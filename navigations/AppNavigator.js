@@ -2,7 +2,7 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
-import HomeScreen from "../screens/HomeScreen";
+import BrowserScreen from "../screens/BrowserScreen";
 import WelcomeScreen from "../screens/WelcomeScreen";
 
 const Stack = createStackNavigator();
@@ -10,15 +10,15 @@ const Stack = createStackNavigator();
 const AppNavigator = ({ isFirstLaunch }) => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName={isFirstLaunch ? "Welcome" : "Home"}>
+      <Stack.Navigator initialRouteName={isFirstLaunch ? "Welcome" : "Browser"}>
         <Stack.Screen
           name="Welcome"
           component={WelcomeScreen}
           options={{ headerShown: false }}
         />
         <Stack.Screen
-          name="Home"
-          component={HomeScreen}
+          name="Browser"
+          component={BrowserScreen}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
