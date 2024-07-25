@@ -1,5 +1,13 @@
 import React, { useState, useRef } from "react";
-import { View, Text, TextInput, Button, TouchableOpacity } from "react-native";
+import {
+  View,
+  Text,
+  TextInput,
+  Button,
+  TouchableOpacity,
+  PanResponder,
+  Animated,
+} from "react-native";
 import { Stack, HStack, VStack } from "react-native-flex-layout";
 
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -25,6 +33,45 @@ const BrowserScreen = () => {
   const [inputUrl, setInputUrl] = useState("");
   const webViewRef = useRef(null);
   const [loading, setLoading] = useState(false);
+  const [showInput, setShowInput] = useState(false);
+
+  const animatedValue = useRef(new Animated.Value(0)).current;
+
+  const panResponder = useRef(
+    PanResponder.create({
+      onMoveShouldSetPanResponder: () => true,
+      onPanResponderMove: (_, gestureState) => {
+        const { dy } = gestureState;
+        if (dy > 0) {
+          Animated.timing(animatedValue, {
+            toValue: dy,
+            duration: 0,
+            useNativeDriver: true,
+          }).start();
+          if (dy > 100) {
+            setShowInput(false);
+          }
+        } else if (dy < 0) {
+          Animated.timing(animatedValue, {
+            toValue: dy,
+            duration: 0,
+            useNativeDriver: true,
+          }).start();
+          if (dy < -100) {
+            setShowInput(true);
+          }
+        }
+      },
+      onPanResponderRelease: () => {
+        Animated.timing(animatedValue, {
+          toValue: 0,
+          duration: 300,
+          useNativeDriver: true,
+        }).start();
+        setShowInput((prev) => prev);
+      },
+    }),
+  ).current;
 
   const handleSearch = () => {
     let formattedUrl = inputUrl.trim();
