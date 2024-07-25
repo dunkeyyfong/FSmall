@@ -24,7 +24,7 @@ If you want to develop FSmall:
 - Run `pnpm install` to install dependencies.
 - Start FSmall in development mode. `pnpm start`.
 
-- If you want to FSmall version no build as React Native, you can go [FSmall-iOS](https://github.com/dunkeyyfong/FSmall-iOS) by build with UIKit. (I won't update often it, because Swift and UIKit I only know some it. So, you should use FSmall is coded with React Native)
+- If you want to FSmall version no build as React Native, you can go [FSmall-iOS](https://github.com/dunkeyyfong/FSmall-iOS) by build with UIKit. (I won't update often it, because Swift and UIKit I only know some it. So, I recommend you should use FSmall is coded with React Native)
 
 ### Release
 
