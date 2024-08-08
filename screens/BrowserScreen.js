@@ -101,23 +101,25 @@ const BrowserScreen = () => {
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <HStack className="items-center justify-center mx-5 mb-6">
-        <TextInput
-          style={{
-            height: 40,
-            borderColor: "gray",
-            borderWidth: 1,
-            width: "90%",
-            padding: 10,
-            borderRadius: 15,
-          }}
-          onChangeText={setInputUrl}
-          value={inputUrl}
-          placeholder="Enter URL"
-          onSubmitEditing={handleSearch}
-        />
+      <HStack className="items-center justify-center mx-5 mb-3">
+        <View className="w-[90%] border-sky-200 rounded-xl bg-white border-2 mx-4 ">
+          <TextInput
+            style={{
+              height: 40,
+              width: "90%",
+              padding: 10,
+              borderRadius: 15,
+              marginLeft: 5,
+            }}
+            onChangeText={setInputUrl}
+            value={inputUrl}
+            placeholder="Enter URL"
+            onSubmitEditing={handleSearch}
+          />
+        </View>
+
         <CustomRefreshButton
-          stylesButton="ml-3"
+          stylesButton="ml-3 mr-3"
           handlePress={handleRefresh}
           iconName={loading ? "close" : "refresh"}
           sizeIcon={24}
@@ -125,6 +127,7 @@ const BrowserScreen = () => {
         />
       </HStack>
       <WebView
+        className="pt-2"
         source={{ uri: url }}
         style={{ flex: 1, width: "100%" }}
         ref={webViewRef}
